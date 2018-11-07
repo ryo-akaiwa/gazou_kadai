@@ -10,3 +10,12 @@ imagesc(ORG); axis image; % 画像の表示
 
 ![原画像](https://github.com/ryo-akaiwa/gazou_kadai/blob/master/image02/kadai2_1.png?raw=true)  
 図1 グレースケール
+
+2階調画像を生成するために次のように処理する。
+
+IMG = ORG>128;  
+imagesc(IMG); colormap(gray); colorbar;  axis image;
+
+これによって生成した画像を図2に示す。
+
+![原画像](https://github.com/ryo-akaiwa/gazou_kadai/blob/master/image02/kadai2_2.png?raw=true)
