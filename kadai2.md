@@ -19,3 +19,17 @@ imagesc(IMG); colormap(gray); colorbar;  axis image;
 これによって生成した画像を図2に示す。
 
 ![原画像](https://github.com/ryo-akaiwa/gazou_kadai/blob/master/image02/kadai2_2.png?raw=true)
+図2　2階調画像
+
+また、4階調画像を生成するためには次のように処理する。
+
+IMG0 = ORG>64;  
+IMG1 = ORG>128;  
+IMG2 = ORG>192;  
+IMG = IMG0 + IMG1 + IMG2;  
+imagesc(IMG); colormap(gray); colorbar;  axis image;
+
+これによって生成した画像を図3に示す。
+
+![原画像](https://github.com/ryo-akaiwa/gazou_kadai/blob/master/image02/kadai2_3.png?raw=true)
+図4　4階調画像
