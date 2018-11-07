@@ -32,4 +32,20 @@ imagesc(IMG); colormap(gray); colorbar;  axis image;
 これによって生成した画像を図3に示す。
 
 ![原画像](https://github.com/ryo-akaiwa/gazou_kadai/blob/master/image02/kadai2_3.png?raw=true)
-図4　4階調画像
+図3　4階調画像
+
+また、8階調画像を生成するためには次のように処理をする。
+
+IMG0 = ORG>32;  
+IMG1 = ORG>64;  
+IMG2 = ORG>96;  
+IMG3 = ORG>128;  
+IMG4 = ORG>160;  
+IMG5 = ORG>192;  
+IMG6 = ORG>224;  
+IMG = IMG0 + IMG1 + IMG2 + IMG3 + IMG4 + IMG5 + IMG6;  
+imagesc(IMG); colormap(gray); colorbar;  axis image;
+
+これによって生成した画像を図4に示す。
+![原画像](https://github.com/ryo-akaiwa/gazou_kadai/blob/master/image02/kadai2_4.png?raw=true)
+図4　8階調画像
