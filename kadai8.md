@@ -4,7 +4,7 @@
 
 この原画像を図1に示す。
 
-![原画像](https://github.com/ryo-akaiwa/gazou_kadai/blob/master/image08/LLENN.jpg?raw=true)
+![原画像](https://github.com/ryo-akaiwa/gazou_kadai/blob/master/image08/LLENN.jpg?raw=true)  
 図1　原画像
 
 この画像を
